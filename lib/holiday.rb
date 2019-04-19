@@ -64,11 +64,11 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def all_holidays_with_bbq(holiday_hash)
-  holiday_hash.collect do |season, names|
+  holiday_hash.each do |season, names|
     names.collect do |name, supplies|
       name if supplies.include?("BBQ")
     end
-  end.flatten.compact
+  end
   end
   # another student said this was how to do this, but I don't understand how this works?
   #I understand that collect returns an array, but I've never called a variable before a biconditional, and I
