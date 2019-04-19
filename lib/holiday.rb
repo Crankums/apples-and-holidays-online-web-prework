@@ -69,7 +69,7 @@ def all_holidays_with_bbq(holiday_hash)
       name if supplies.include?("BBQ")
     end
   end
-  end
+end
   # another student said this was how to do this, but I don't understand how this works?
   #I understand that collect returns an array, but I've never called a variable before a biconditional, and I
   # didn't know you can call methods on "end". I have no idea how that even works.
